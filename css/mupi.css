@@ -1,6 +1,26 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 }
+.logo{
+	max-width: 150px;
+}
+.navbar-brand:before{
+	content: "";
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: "Glyphicons Halflings";
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	font-size: 20px;
+}
+.navbar-brand{
+	color: #F16623;
+}
+.navbar-brand:hover{
+	color: #603813;
+}
 .navbar {
     background-color: #FFF;
     border-bottom: 1px solid #FACAB3;
