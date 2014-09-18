@@ -3,18 +3,24 @@ jQuery(document).ready(function(){
                 function( data ) {
                     var entries = data.feed.entry;
                     var row;
+                    var totalraised = 310.0;
                     for(row = 0; row < entries.length; row++){
                         var entry = entries[row];
 						var price = jQuery("#" + entry.gsx$productid["$t"] + " .price");
 						var image = jQuery("#" + entry.gsx$productid["$t"] + " img");
 
-						price.text(entry.gsx$value["$t"]);
+                        totalraised += parseFloat(entry.gsx$sold["$t"].replace( /,/g, ''));
 
-						if(entry.gsx$image["$t"]){
-							image.attr("src", entry.gsx$image["$t"]);
-						}
+						price.text(entry.gsx$value["$t"]);
 						
                         console.log(entries[row]);
                     }
+
+                    var raised = jQuery("#raised");
+                    totalraised = totalraised.toFixed(2);
+                    raised.text("R$" + totalraised);
+                    var porcentage = totalraised/50;
+                    var progress_bar = jQuery("#money_progress");
+                    progress_bar.css('width', porcentage + "%");
             });
         });
