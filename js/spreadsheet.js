@@ -4,7 +4,16 @@ jQuery(document).ready(function(){
                     var entries = data.feed.entry;
                     var row;
                     for(row = 0; row < entries.length; row++){
-                        
+                        var entry = entries[row];
+						var price = jQuery("#" + entry.gsx$productid["$t"] + " .price");
+						var image = jQuery("#" + entry.gsx$productid["$t"] + " img");
+
+						price.text(entry.gsx$value["$t"]);
+
+						if(entry.gsx$image["$t"]){
+							image.attr("src", entry.gsx$image["$t"]);
+						}
+						
                         console.log(entries[row]);
                     }
             });
