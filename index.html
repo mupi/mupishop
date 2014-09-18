@@ -78,14 +78,26 @@
                             <span class="sr-only">10% Arrecadados</span>
                           </div>
                         </div>
+                        <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+                            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+                            <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                            <input type="hidden" name="currency" value="BRL" />
+                            <input type="hidden" name="receiverEmail" value="ideas.matchbox@gmail.com" />
+                            <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                            </form>
+                            <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
                     </div>
                     <div class="col-md-8">
                         <p>
-                            Recentemente fomos selecionados para um programa de 3 meses de aceleração em Lisboa, o <a href="http://lisbon-challenge.com" target="_blank">Lisbon Challenge</a>, que vai nos proporcionar uma rica experiência a fim de aprimorar a Escola Mupi e nos fazer evoluir enquanto profisisonais e 
+                            Recentemente fomos selecionados para um programa de 3 meses de aceleração em Lisboa, o <a href="http://lisbon-challenge.com" target="_blank">Lisbon Challenge</a>, que vai nos proporcionar uma rica experiência a fim de aprimorar a Escola Mupi e nos fazer evoluir enquanto profissionais e 
                             empreendedores.
                         </p>
                         <p>
                             Através da compra dos produtos da Escola você nos ajuda a financiar a viagem e a estar um passo mais próximos de melhorar o ensino de tecnologia no Brasil.
+                        </p>
+                        <p>
+                            Você também pode contribuir com a quantia desejada por meio de doações com o botão ao lado. Qualquer ajuda é bem vinda :) <br/>
+                            Revertiremos 50% do valor arrecadado com doações em bolsas para alunos de escolas públicas. Atualmente já contamos com 7 alunos bolsistas, você pode conhecer algum deles <a href="https://www.facebook.com/escolamupi/posts/836162473083834" target="_blank">aqui</a>. Se tiver interesse em adotar algum aluno, nos envie um email para contato @ mupi.me
                         </p>
                     </div>
                 </div>
@@ -94,10 +106,10 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="products">
             <div class="col-sm-4 col-lg-4 col-md-4">
                 <a href="#" class="product">
-                    <div class="thumbnail">
+                    <div class="thumbnail" id="camiseta">
                         <span class="price">R$49,90</span>
                         <img src="http://placehold.it/320x150" alt="">
                         <div class="caption">
@@ -105,7 +117,62 @@
                         </div>
                     </div>
                 </a>
-            </div>         
+            </div>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <a href="#" class="product">
+                    <div class="thumbnail" id="adesivo">
+                        <span class="price">R$49,90</span>
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4>Adesivo Mupi</h4>
+                        </div>
+                    </div>
+                </a>
+            </div> 
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <a href="#" class="product">
+                    <div class="thumbnail" id="porta_copos">
+                        <span class="price">R$9,90</span>
+                        <img src="img/porta-copos.png" alt="">
+                        <div class="caption">
+                            <h4>Porta copos</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <a href="#" class="product">
+                    <div class="thumbnail" id="porta_copos">
+                        <span class="price">R$30</span>
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4>Caneca</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>     
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <a href="#" class="product">
+                    <div class="thumbnail" id="pacote_trimestral">
+                        <span class="price">R$49,90</span>
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4>Pacote trimestral de assinatura</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+            <div class="col-sm-4 col-lg-4 col-md-4">
+                <a href="#" class="product">
+                    <div class="thumbnail" id="pacote_anual">
+                        <span class="price">R$49,90</span>
+                        <img src="http://placehold.it/320x150" alt="">
+                        <div class="caption">
+                            <h4>Pacote trimestral de assinatura</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>           
         </div>
 
     </div>
