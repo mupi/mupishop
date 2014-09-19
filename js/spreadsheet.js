@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
                 function( data ) {
                     var entries = data.feed.entry;
                     var row;
-                    var totalraised = 310.0;
+                    var totalraised = 0.0;
                     for(row = 0; row < entries.length; row++){
                         var entry = entries[row];
 						var price = jQuery("#" + entry.gsx$productid["$t"] + " .price");
