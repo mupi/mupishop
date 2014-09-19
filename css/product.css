@@ -5,4 +5,5 @@
 .price{
 	position: static;
 	float: right;
+	margin-left: 1em;
 }

@@ -63,16 +63,16 @@
 
     <!-- Page Content -->
     <div class="container">
-        <div class="row product-container">
+        <div class="row product-container" id="caneca">
             <h1>Caneca Mupi</h1>
             <div class="col-md-4">
                 <img class="img-responsive" src="img/caneca.jpg" alt="">
             </div> 
             <div class="col-md-7">   
                 <div class="row">   
-                    <span class="price">R$49,90</span>
+                    <span class="price">R$35,00</span>
                     <p>
-                        Uma bela caneca de porcelana, para deixar seu café ou chá com 
+                        Uma bela caneca de cerâmica, para deixar seu café ou chá com 
                         mais charme! Disponível apenas na cor preta, caso tenha interesse
                         em outras cores, mande-nos um email, quem sabe não atendemos 
                         ao seu pedido ;)
@@ -85,14 +85,15 @@
                     <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="PagSeguroLightbox(this); return false;">
                     <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
                     <input type="hidden" name="itemCode" value="0800FCF68282A05994E66F9C981F0841" />
-                    <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-comprar.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                    <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
                     </form>
                     <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
                     <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-                    <p>
-                        Por favor, inclua o valor do frete no pagamento. Calcule aqui o preço.
-                        Se for em Campinas, é possível retirar conosco e nesse caso não precisa
-                        incluir o frete (ficamos em Barão Geraldo).
+                    <p class="text-info">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        Este valor não inclui a taxa de entrega. Assim que recebermos a confirmação 
+                        de pagamento entraremos em contato para combinar o pagamento do frete (em torno de 10 reais).
+                        Se for em Campinas, é possível retirar conosco e nesse caso não haverá acréscimos (ficamos em Barão Geraldo).
                     </p>
                 </div>
                 <!-- <img src="img/lisbonchallenge.jpg" class="img-responsive"/> -->
